@@ -1,0 +1,16 @@
+@font-face {
+  src: url(/fonts/helvetica-neue-regular.ttf);
+  font-family: Helvitica-Neue;
+}
+
+body {
+  font-family: "Helvitica-Neue", sans-serif;
+}
+
+.heading-menu {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(23 43 77);
+  margin-bottom: 20px;
+}
