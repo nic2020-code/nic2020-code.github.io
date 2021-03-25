@@ -15,6 +15,35 @@ body {
   margin-bottom: 20px;
 }
 
+.editor {
+  color: #fff;
+  background: #282a36;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 240px;
+  letter-spacing: normal;
+  line-height: 20px;
+  tab-size: 4;
+  position: relative;
+}
+
+.preview-html {
+  min-height: 240px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.preview-html .center-component {
+  width: 100%;
+}
+
 .heading-component {
   background-color: rgb(250, 251, 252);
   padding-left: 80px;
@@ -28,6 +57,195 @@ body {
   color: rgb(23, 43, 77);
 }
 
-.component-body {
-  margin-top: 40px;
+.editor .content {
+  min-height: 240px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  resize: none;
+  outline: none;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.content:focus {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Card */
+
+.wait-state {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  padding: 8px 12px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon-state {
+  margin-right: 8px;
+}
+
+.card-state {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 148px;
+  height: 32px;
+  padding: 8px 12px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-state.wait-state {
+  border-radius: 2px;
+  background-color: #f7faff;
+}
+
+.card-state.reject-state {
+  border-radius: 2px;
+  background-color: #fff7f5;
+}
+
+.card-state.done-state {
+  border-radius: 2px;
+  background-color: #f5fffa;
+}
+
+.card-state.voided-state {
+  border-radius: 2px;
+  background-color: #f4f4f6;
+}
+
+.card-state.draft-state {
+  border-radius: 2px;
+  background-color: #f4f4f4;
+}
+
+.text-state {
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.text-state.wait-text {
+  color: #4c9aff;
+}
+
+.text-state.reject-text {
+  color: #de350b;
+}
+
+.text-state.done-text {
+  color: #00875a;
+}
+
+.text-state.voided-text {
+  color: #c1c7d0;
+}
+
+.text-state.draft-text {
+  color: #7a869a;
+}
+
+.table-index {
+  border-spacing: 0 12px;
+  min-width: 100%;
+  border-collapse: separate;
+}
+
+.table-index tbody tr {
+  box-shadow: 0px 1px 4px rgba(4, 80, 193, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.table-index td {
+  padding: 13px 10px;
+  border-right: none;
+  font-family: "Helvetica neue", sans-serif;
+}
+
+.table-index th {
+  padding: 0 10px;
+  border-right: none;
+  background-color: transparent;
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #7a869a;
+}
+
+.table-index td:first-child {
+  padding-left: 20px;
+}
+
+.table-index td:last-child {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.file-name-index {
+  color: #253858;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+.user-name-index {
+  color: #b3bac5;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 192px;
+}
+
+.day-created-index {
+  color: #253858;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80px;
+}
+
+/* Button */
+
+.e-btn {
+  background-color: #0052cc;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 10px 12px;
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 14px;
+}
+
+.e-btn:hover {
+  background-color: #0450c1;
+}
+
+.e-btn:disabled {
+  background-color: #ebecf0;
+  color: #b3bac5;
 }

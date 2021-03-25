@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/pages/style.css">
+    <link rel="stylesheet" href="/styles/a11y-dark.css">
 </head>
 <body>
     
@@ -45,16 +46,92 @@
                                   </li>
                               </ul>
                         </div>
-                        
-                        <div class="component-body">
-                            <iframe src="https://codesandbox.io/embed/card-2mv5y?fontsize=14&hidenavigation=1&theme=dark"
-                            style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-                            title="Card"
-                            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-                            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-                          ></iframe>
+
+                        <div class="preview-html">
+                            <div class="center-component">
+                                <table class="table-index">
+
+                                    <colgroup>
+                                        <col width="50" />
+                                        <col width="450" />
+                                        <col width="200" />
+                                        <col width="250" />
+                                        <col width="100" />
+                                    </colgroup>
+    
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" name="" id=""></td>
+                                            <td>
+                                                <div class="file-name-index">Hợp đồng dịch vụ VMI-NACENCOMM 13.7.20.docx</div>                     
+                                                <div class="user-name-index">Từ: Nguyễn Trần Văn Khanh</div>
+                                            </td>
+                                            <td>
+                                                <div class="day-created-index">07/12/2020</div>
+                                                <div class="user-name-index">03:32:35 PM</div>
+                                            </td>
+                                            <td>
+                                                <div class="card-state wait-state">
+                                                    <img src="/images/state_icon.svg" loading="lazy" alt="" class="icon-state" />
+                                                    <div class="text-state wait-text">Chờ ký</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="">
+                                                    <img src="images/function_icon.svg" loading="lazy" alt="function">
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
                         </div>
 
+                            <pre>
+                                <code>
+        &lt;!-- Card --&gt;
+                                    
+        &lt;table class="table-index"&gt;
+
+            &lt;colgroup&gt;
+                &lt;col width=&quot;50&quot; /&gt;
+                &lt;col width=&quot;450&quot; /&gt;
+                &lt;col width=&quot;200&quot; /&gt;
+                &lt;col width=&quot;250&quot; /&gt;
+                &lt;col width=&quot;100&quot; /&gt;
+            &lt;/colgroup&gt;
+
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot;&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;file-name-index&quot;&gt;Hợp đồng dịch vụ VMI-NACENCOMM 13.7.20.docx&lt;/div&gt;                     
+                        &lt;div class=&quot;user-name-index&quot;&gt;Từ: Nguyễn Trần Văn Khanh&lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;day-created-index&quot;&gt;07/12/2020&lt;/div&gt;
+                        &lt;div class=&quot;user-name-index&quot;&gt;03:32:35 PM&lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;div class=&quot;card-state wait-state&quot;&gt;
+                            &lt;img src=&quot;/images/state_icon.svg&quot; loading=&quot;lazy&quot; alt=&quot;&quot; class=&quot;icon-state&quot; /&gt;
+                            &lt;div class=&quot;text-state wait-text&quot;&gt;Chờ k&yacute;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;&quot;&gt;
+                            &lt;img src=&quot;images/function_icon.svg&quot; loading=&quot;lazy&quot; alt=&quot;function&quot;&gt;
+                        &lt;/a&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+
+            &lt;/tbody&gt;
+
+        &lt;/table&gt;
+                                </code>
+                            </pre>    
                     </div>
 
                     <div class="tab-pane fade" id="list-button" role="tabpanel" aria-labelledby="list-button-list">
@@ -70,6 +147,22 @@
                                   </li>
                               </ul>
                         </div>
+
+                        <div class="preview-html">
+                            <div class="center-component">
+                                <button class="e-btn">Button</button>
+                                <button class="e-btn">Hover</button>
+                                <button class="e-btn" disabled>Disable</button>
+                            </div>
+                        </div>
+
+                        <pre>
+                            <code>
+        &lt;button class=&quot;e-btn&quot;&gt;Button&lt;/button&gt;
+        &lt;button class=&quot;e-btn&quot;&gt;Hover&lt;/button&gt;
+        &lt;button class=&quot;e-btn&quot; disabled&gt;Disable&lt;/button&gt;
+                            </code>
+                        </pre>    
 
 
                     </div>
@@ -88,6 +181,13 @@
                               </ul>
                         </div>
 
+                        <div class="preview-html">
+                            <div class="center-component"></div>
+                        </div>
+
+                        <div class="editor language-js">
+
+                        </div>
 
                     </div>
 
@@ -105,6 +205,14 @@
                               </ul>
                         </div>
 
+                        <div class="preview-html">
+                            <div class="center-component"></div>
+                        </div>
+
+                        <div class="editor language-js">
+
+                            
+                        </div>
 
                     </div>
 
@@ -114,5 +222,8 @@
     </div>
 
     <script src="/js/bootstrap.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>hljs.highlightAll();</script>
+
 </body>
 </html>
