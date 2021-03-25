@@ -9,6 +9,7 @@
     <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/pages/style.css">
     <link rel="stylesheet" href="/styles/a11y-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
 </head>
 <body>
     
@@ -153,6 +154,7 @@
                                 <button class="e-btn">Button</button>
                                 <button class="e-btn">Hover</button>
                                 <button class="e-btn" disabled>Disable</button>
+                                <button class="e-btn btn-transparent">Transparent</button>
                             </div>
                         </div>
 
@@ -163,6 +165,7 @@
         &lt;button class=&quot;e-btn&quot;&gt;Button&lt;/button&gt;
         &lt;button class=&quot;e-btn&quot;&gt;Hover&lt;/button&gt;
         &lt;button class=&quot;e-btn&quot; disabled&gt;Disable&lt;/button&gt;
+        &lt;button class=&quot;e-btn btn-transparent&quot;&gt;Transparent&lt;/button&gt;
                             </code>
                         </pre>    
 
@@ -184,12 +187,24 @@
                         </div>
 
                         <div class="preview-html">
-                            <div class="center-component"></div>
+                            <div class="center-component">
+                                <form method="POST">
+                                    <div class="form-label-text">Họ và tên*</div>
+                                    <input class="form-input" type="text" id="form-input" name="form-input" placeholder="Nhập họ và tên">
+                                </form>
+                            </div>
                         </div>
 
-                        <div class="editor language-js">
+                        <pre>
+                            <code>
+        &lt;!--Form--&gt;
 
-                        </div>
+        &lt;form method=&quot;POST&quot;&gt;
+            &lt;div class=&quot;form-label-text&quot;&gt;Họ v&agrave; t&ecirc;n*&lt;/div&gt;
+            &lt;input class=&quot;form-input&quot; type=&quot;text&quot; id=&quot;form-input&quot; name=&quot;form-input&quot; placeholder=&quot;Nhập họ v&agrave; t&ecirc;n&quot;&gt;
+        &lt;/form&gt;
+                            </code>
+                        </pre> 
 
                     </div>
 
@@ -208,13 +223,53 @@
                         </div>
 
                         <div class="preview-html">
-                            <div class="center-component"></div>
+                            <div class="center-component">
+                                <button class="e-btn" onclick="showModal()">Click to show</button>
+                                <div class="e-background-modal e-hidden">
+                                    <div class="e-modal">
+                                        <div class="e-heading-modal">
+                                            <div></div>
+                                            <img class="e-close-button" src="/images/close-icon.svg" alt="">
+                                        </div>
+                                        <div class="e-body-modal">
+                                            <form method="POST">
+                                                <div class="form-label-text">Họ và tên*</div>
+                                                <input style="width: 504px" class="form-input" type="text" id="form-input" name="form-input" placeholder="Nhập họ và tên">
+                                                <div class="e-two-button">
+                                                    <button class="e-btn btn-transparent">Bỏ qua</button>
+                                                    <button class="e-btn">Xác nhận</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="editor language-js">
+                        <pre>
+                            <code>
+        &lt;!--Modal--&gt;
 
-                            
-                        </div>
+        &lt;div class=&quot;e-background-modal e-hidden&quot;&gt;
+            &lt;div class=&quot;e-modal&quot;&gt;
+                &lt;div class=&quot;e-heading-modal&quot;&gt;
+                    &lt;img class=&quot;e-close-button&quot; src=&quot;/images/close-icon.svg&quot; alt=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;e-body-modal&quot;&gt;
+                    &lt;form method=&quot;POST&quot;&gt;
+                        &lt;div class=&quot;form-label-text&quot;&gt;Họ v&agrave; t&ecirc;n*&lt;/div&gt;
+                        &lt;input class=&quot;form-input&quot; type=&quot;text&quot; id=&quot;form-input&quot; name=&quot;form-input&quot; placeholder=&quot;Nhập họ v&agrave; t&ecirc;n&quot;&gt;
+                        &lt;div class=&quot;e-two-button&quot;&gt;
+                            &lt;button class=&quot;e-btn btn-transparent&quot;&gt;Bỏ qua&lt;/button&gt;
+                            &lt;button class=&quot;e-btn&quot;&gt;X&aacute;c nhận&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+                            </code>
+                        </pre>
 
                     </div>
 
@@ -223,6 +278,7 @@
         </div>
     </div>
 
+    <script src="/js/main.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="js/highlight.pack.js"></script>
     <script>hljs.highlightAll();</script>

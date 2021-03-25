@@ -250,3 +250,78 @@ body {
   background-color: #ebecf0;
   color: #b3bac5;
 }
+
+.e-btn.btn-transparent {
+  background-color: transparent;
+  color: #0052cc;
+}
+
+/* Form */
+
+.form-label-text {
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #505f79;
+}
+
+.form-input {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #97a0af;
+  border-radius: 2px;
+  color: #253858;
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.form-input::placeholder {
+  color: #97a0af;
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Modal */
+
+.e-background-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(183, 183, 183, 0.85);
+  z-index: 9999;
+}
+
+.e-background-modal.e-hidden {
+  display: none;
+}
+
+.e-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
+}
+
+.e-modal .e-heading-modal {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b3bac5;
+  padding: 12px 20px 12px 24px;
+}
+
+.e-modal .e-body-modal {
+  padding: 24px;
+}
+
+.e-body-modal .e-two-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 48px;
+}
