@@ -9,7 +9,6 @@
     <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/pages/style.css">
     <link rel="stylesheet" href="/styles/a11y-dark.css">
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
 </head>
 <body>
     
@@ -30,6 +29,8 @@
                     <a class="list-group-item list-group-item-action" id="list-button-list" data-bs-toggle="list" href="#list-button" role="tab" aria-controls="button">Button</a>
                     <a class="list-group-item list-group-item-action" id="list-form-list" data-bs-toggle="list" href="#list-form" role="tab" aria-controls="form">Form</a>
                     <a class="list-group-item list-group-item-action" id="list-modal-list" data-bs-toggle="list" href="#list-modal" role="tab" aria-controls="modal">Modal</a>
+                    <a class="list-group-item list-group-item-action" id="list-navbar-list" data-bs-toggle="list" href="#list-navbar" role="tab" aria-controls="navbar">Navbar</a>
+                    <a class="list-group-item list-group-item-action" id="list-side-menu-list" data-bs-toggle="list" href="#list-side-menu" role="tab" aria-controls="side-menu">Side menu</a>
                 </div>
             </div>
             <div class="col-sm-10">
@@ -267,6 +268,157 @@
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
+
+                            </code>
+                        </pre>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="list-navbar" role="tabpanel" aria-labelledby="list-navbar-list">
+
+                        <div class="heading-component">
+                            <div class="heading-text">Navbar</div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Code</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Design</a>
+                                  </li>
+                              </ul>
+                        </div>
+
+                        <div class="preview-html">
+                            <div class="center-component">
+
+                                <nav class="e-navbar">
+
+                                    <div class="navbar-left">
+                                        <img class="navbar-logo" src="/images/nav-logo.svg" alt="">
+                                        <ul class="navbar-list-menu">
+                                            <li class="navbar-list-item active">
+                                                <a href="#">Quản lý</a>   
+                                            </li>
+                                            <li class="navbar-list-item">
+                                                <a href="#">Bản mẫu</a>
+                                            </li>
+                                            <li class="navbar-list-item">
+                                                <a href="#">Danh bạ</a>
+                                            </li>
+                                            <li class="navbar-list-item">
+                                                <a href="#">Cài đặt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="navbar-right">
+                                        <div class="navbar-notification">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13.448" height="15" viewBox="0 0 13.448 15">
+                                                <path id="notification-icon" d="M1593.3,4429.462l-1.4-1.4v-1.854a5.18,5.18,0,0,0-4.655-5.146V4420h-1.034v1.061a5.18,5.18,0,0,0-4.655,5.146v1.854l-1.4,1.4a.516.516,0,0,0-.152.365v1.552a.518.518,0,0,0,.517.518h3.621v.4a2.664,2.664,0,0,0,2.328,2.689,2.589,2.589,0,0,0,2.845-2.573v-.518h3.621a.518.518,0,0,0,.517-.518v-1.552A.516.516,0,0,0,1593.3,4429.462Zm-5.021,2.952a1.552,1.552,0,0,1-3.1,0v-.518h3.1Zm4.138-1.552h-11.379v-.82l1.4-1.4a.515.515,0,0,0,.152-.366v-2.068a4.138,4.138,0,1,1,8.276,0v2.068a.516.516,0,0,0,.151.366l1.4,1.4Z" transform="translate(-1580 -4420)" fill="#505f79"/>
+                                            </svg>
+                                        </div>
+                                        <div class="navbar-divider"></div>
+                                        <div class="navbar-user" onclick="rotateArrow()">
+                                            <div class="user-icon">H</div>
+                                            <div class="user-arrow"></div>
+                                        </div>
+                                    </div>
+
+                                </nav>
+
+                            </div>
+                        </div>
+
+                        <pre>
+                            <code>
+        &lt;!--Navbar--&gt;
+
+        &lt;nav class=&quot;e-navbar&quot;&gt;
+
+            &lt;div class=&quot;navbar-left&quot;&gt;
+                &lt;img class=&quot;navbar-logo&quot; src=&quot;/images/nav-logo.svg&quot; alt=&quot;&quot;&gt;
+                &lt;ul class=&quot;navbar-list-menu&quot;&gt;
+                    &lt;li class=&quot;navbar-list-item active&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Quản l&yacute;&lt;/a&gt;   
+                    &lt;/li&gt;
+                    &lt;li class=&quot;navbar-list-item&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Bản mẫu&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;navbar-list-item&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Danh bạ&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;navbar-list-item&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;C&agrave;i đặt&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;navbar-right&quot;&gt;
+                &lt;div class=&quot;navbar-notification&quot;&gt;
+                    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;13.448&quot; height=&quot;15&quot; viewBox=&quot;0 0 13.448 15&quot;&gt;
+                        &lt;path id=&quot;notification-icon&quot; d=&quot;M1593.3,4429.462l-1.4-1.4v-1.854a5.18,5.18,0,0,0-4.655-5.146V4420h-1.034v1.061a5.18,5.18,0,0,0-4.655,5.146v1.854l-1.4,1.4a.516.516,0,0,0-.152.365v1.552a.518.518,0,0,0,.517.518h3.621v.4a2.664,2.664,0,0,0,2.328,2.689,2.589,2.589,0,0,0,2.845-2.573v-.518h3.621a.518.518,0,0,0,.517-.518v-1.552A.516.516,0,0,0,1593.3,4429.462Zm-5.021,2.952a1.552,1.552,0,0,1-3.1,0v-.518h3.1Zm4.138-1.552h-11.379v-.82l1.4-1.4a.515.515,0,0,0,.152-.366v-2.068a4.138,4.138,0,1,1,8.276,0v2.068a.516.516,0,0,0,.151.366l1.4,1.4Z&quot; transform=&quot;translate(-1580 -4420)&quot; fill=&quot;#505f79&quot;/&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;navbar-divider&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;navbar-user&quot;&gt;
+                    &lt;div class=&quot;user-icon&quot;&gt;H&lt;/div&gt;
+                    &lt;div class=&quot;user-arrow&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/nav&gt;
+
+                            </code>
+                        </pre>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="list-side-menu" role="tabpanel" aria-labelledby="list-side-menu-list">
+
+                        <div class="heading-component">
+                            <div class="heading-text">Side menu</div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Code</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Design</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="preview-html">
+                            <div class="center-component">
+                                <div class="side-menu-container">
+
+                                    <nav>
+                                        <ul class="e-side-menu">
+                                            <li class="side-list-item">
+                                                <div class="list-item-icon">
+                                                    <img src="/images/my-file-icon.svg" alt="">
+                                                    <div>Tài liệu của tôi</div>
+                                                </div>
+                                                <div class="list-item-arrow"></div>
+                                            </li>
+                                            <li class="side-list-item">
+                                                <img src="/images/deleted-icon.svg" alt="">
+                                                <a href="#">Đã xoá</a>
+                                            </li>
+                                            <li class="side-list-item">
+                                                <img src="/images/folder-icon.svg" alt="">
+                                                <a href="#">Thư mục</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <pre>
+                            <code>
+        &lt;!--Side menu--&gt;
+
 
                             </code>
                         </pre>
