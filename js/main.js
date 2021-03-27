@@ -32,3 +32,7 @@ function currentPage() {
     }
     
 }
+
+function showToggleMenu() {
+    $(".side-toggle-menu").toggle('500', "swing");
+}

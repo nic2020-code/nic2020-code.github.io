@@ -235,7 +235,7 @@
                                         <div class="e-body-modal">
                                             <form method="POST">
                                                 <div class="form-label-text">Họ và tên*</div>
-                                                <input style="width: 504px" class="form-input" type="text" id="form-input" name="form-input" placeholder="Nhập họ và tên">
+                                                <input style="width: 504px" class="form-input" type="text" id="form-input-modal" name="form-input-modal" placeholder="Nhập họ và tên">
                                                 <div class="e-two-button">
                                                     <button class="e-btn btn-transparent">Bỏ qua</button>
                                                     <button class="e-btn">Xác nhận</button>
@@ -392,23 +392,82 @@
                                 <div class="side-menu-container">
 
                                     <nav>
+                                        
                                         <ul class="e-side-menu">
-                                            <li class="side-list-item">
-                                                <div class="list-item-icon">
-                                                    <img src="/images/my-file-icon.svg" alt="">
-                                                    <div>Tài liệu của tôi</div>
+
+                                            <li class="side-list-item active" onclick="showToggleMenu()">
+
+                                                <a href="#">
+                                                    <img class="list-item-icon" src="/images/my-file-icon.svg" alt="">
+                                                    Tài liệu của tôi
+                                                    <div class="list-item-arrow"></div>
+                                                </a>  
+
+                                            </li>
+
+                                            <li class="side-toggle-menu">
+                                                
+                                                <div class="list-item-wrapper active">
+                                                    <a href="#">
+                                                        <img class="list-item-icon" src="/images/all-files-icon.svg " alt="">
+                                                        Tất cả (05)
+                                                    </a>
                                                 </div>
-                                                <div class="list-item-arrow"></div>
+                                                
+                                                <div class="list-item-wrapper">
+                                                    <a href="#">
+                                                        <img class="list-item-icon" src="/images/wait-state-icon.svg " alt="">
+                                                        Chờ ký (01)
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="list-item-wrapper">
+                                                    <a href="#">
+                                                        <img class="list-item-icon" src="/images/complete-state-icon.svg " alt="">
+                                                        Ký hoàn tất (01)
+                                                    </a>
+                                                </div>
+
+                                                <div class="list-item-wrapper">
+                                                    <a href="#">
+                                                        <img class="list-item-icon" src="/images/reject-state-icon.svg " alt="">
+                                                        Từ chối (01)
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="list-item-wrapper">
+                                                    <a href="#">
+                                                        <img class="list-item-icon" src="/images/voided-state-icon.svg " alt="">
+                                                        Thu hồi (01)
+                                                    </a>
+                                                </div>   
+                                                
+                                                <div class="list-item-wrapper">
+                                                    <a href="#">
+                                                        <img class="list-item-icon" src="/images/draft-state-icon.svg " alt="">
+                                                        Nháp (01)
+                                                    </a>
+                                                </div>
+                                                
                                             </li>
+
                                             <li class="side-list-item">
-                                                <img src="/images/deleted-icon.svg" alt="">
-                                                <a href="#">Đã xoá</a>
+                                                <a href="#">
+                                                    <img class="list-item-icon" src="/images/deleted-icon.svg" alt="">
+                                                    Đã xoá
+                                                </a>
                                             </li>
+
                                             <li class="side-list-item">
-                                                <img src="/images/folder-icon.svg" alt="">
-                                                <a href="#">Thư mục</a>
+                                                <a href="#">
+                                                    <img class="list-item-icon" src="/images/folder-icon.svg" alt="">
+                                                    Thư mục
+                                                    <div class="list-item-function"><img src="/images/list-item-function.svg" alt=""></div>
+                                                </a>                                                
                                             </li>
+
                                         </ul>
+
                                     </nav>
 
                                 </div>
@@ -419,6 +478,84 @@
                             <code>
         &lt;!--Side menu--&gt;
 
+        &lt;nav&gt;
+                                        
+            &lt;ul class=&quot;e-side-menu&quot;&gt;
+
+                &lt;li class=&quot;side-list-item active&quot;&gt;
+
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/my-file-icon.svg&quot; alt=&quot;&quot;&gt;
+                        T&agrave;i liệu của t&ocirc;i
+                        &lt;div class=&quot;list-item-arrow&quot;&gt;&lt;/div&gt;
+                    &lt;/a&gt;  
+
+                &lt;/li&gt;
+
+                &lt;li class=&quot;side-toggle-menu&quot;&gt;
+                    
+                    &lt;div class=&quot;list-item-wrapper active&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/all-files-icon.svg &quot; alt=&quot;&quot;&gt;
+                            Tất cả (05)
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;list-item-wrapper&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/wait-state-icon.svg &quot; alt=&quot;&quot;&gt;
+                            Chờ k&yacute; (01)
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;list-item-wrapper&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/complete-state-icon.svg &quot; alt=&quot;&quot;&gt;
+                            K&yacute; ho&agrave;n tất (01)
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;list-item-wrapper&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/reject-state-icon.svg &quot; alt=&quot;&quot;&gt;
+                            Từ chối (01)
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;list-item-wrapper&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/voided-state-icon.svg &quot; alt=&quot;&quot;&gt;
+                            Thu hồi (01)
+                        &lt;/a&gt;
+                    &lt;/div&gt;   
+                    
+                    &lt;div class=&quot;list-item-wrapper&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/draft-state-icon.svg &quot; alt=&quot;&quot;&gt;
+                            Nh&aacute;p (01)
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/li&gt;
+
+                &lt;li class=&quot;side-list-item&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/deleted-icon.svg&quot; alt=&quot;&quot;&gt;
+                        Đ&atilde; xo&aacute;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;side-list-item&quot;&gt;
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;img class=&quot;list-item-icon&quot; src=&quot;/images/folder-icon.svg&quot; alt=&quot;&quot;&gt;
+                        Thư mục
+                        &lt;div class=&quot;list-item-function&quot;&gt;&lt;img src=&quot;/images/list-item-function.svg&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+                    &lt;/a&gt;                                                
+                &lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/nav&gt;
 
                             </code>
                         </pre>
@@ -430,6 +567,7 @@
         </div>
     </div>
 
+    <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="js/highlight.pack.js"></script>
