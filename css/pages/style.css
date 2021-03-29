@@ -175,6 +175,16 @@ body {
   overflow: hidden;
 }
 
+.table-index tbody tr td:nth-child(2) div:first-child:hover {
+  cursor: pointer;
+  color: #0052cc;
+}
+
+.table-index tbody tr:hover {
+  box-shadow: 0px 2px 12px rgba(4, 80, 193, 0.1);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .table-index td {
   padding: 13px 10px;
   border-right: none;
@@ -265,7 +275,15 @@ body {
   color: #505f79;
 }
 
-.form-input {
+.form-select-text {
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #505f79;
+  min-width: 183px;
+}
+
+.e-form-input {
   margin-top: 8px;
   padding: 12px;
   border: 1px solid #97a0af;
@@ -276,7 +294,34 @@ body {
   font-weight: 500;
 }
 
-.form-input::placeholder {
+.e-form-select {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #7a869a;
+  border-radius: 2px;
+  color: #505f79;
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
+  margin-left: 32px;
+  min-width: 270px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("/images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: top 20px right 12px;
+}
+
+.e-form-select option {
+  padding: 12px;
+}
+
+.e-form-select option:first-child {
+  color: #7a869a;
+  display: none;
+}
+
+.e-form-input::placeholder {
   color: #97a0af;
   font-family: "Helvetica neue", sans-serif;
   font-size: 13px;

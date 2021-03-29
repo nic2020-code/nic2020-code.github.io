@@ -189,10 +189,12 @@
 
                         <div class="preview-html">
                             <div class="center-component">
+
                                 <form method="POST">
-                                    <div class="form-label-text">Họ và tên*</div>
-                                    <input class="form-input" type="text" id="form-input" name="form-input" placeholder="Nhập họ và tên">
-                                </form>
+                                    <div class="form-label-text">Label text</div>
+                                    <input class="e-form-input" type="text" id="form-input" name="form-input" placeholder="Placeholder">
+                                </form>                          
+                            
                             </div>
                         </div>
 
@@ -201,9 +203,39 @@
         &lt;!--Form--&gt;
 
         &lt;form method=&quot;POST&quot;&gt;
-            &lt;div class=&quot;form-label-text&quot;&gt;Họ v&agrave; t&ecirc;n*&lt;/div&gt;
-            &lt;input class=&quot;form-input&quot; type=&quot;text&quot; id=&quot;form-input&quot; name=&quot;form-input&quot; placeholder=&quot;Nhập họ v&agrave; t&ecirc;n&quot;&gt;
+            &lt;div class=&quot;form-label-text&quot;&gt;Label text&lt;/div&gt;
+            &lt;input class=&quot;e-form-input&quot; type=&quot;text&quot; id=&quot;form-input&quot; name=&quot;form-input&quot; placeholder=&quot;Placeholder&quot;&gt;
         &lt;/form&gt;
+                            </code>
+                        </pre>
+                        
+                        <div class="preview-html">
+                            <div class="center-component">
+
+                                <form method="POST">
+                                    <label for="form-select" class="form-select-text">Long label text with select</label>
+                                    <select name="" id="form-select" class="e-form-select">
+                                        <option value="" disabled selected>Select option</option>
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                    </select>
+                                </form>                           
+                            
+                            </div>
+                        </div>
+
+                        <pre>
+                            <code>
+        &lt;!--Form with select--&gt;
+
+        &lt;form method=&quot;POST&quot;&gt;
+            &lt;label for=&quot;form-select&quot; class=&quot;form-select-text&quot;&gt;Long label text with select&lt;/label&gt;
+            &lt;select name=&quot;&quot; id=&quot;form-select&quot; class=&quot;e-form-select&quot;&gt;
+                &lt;option value=&quot;&quot; disabled selected&gt;Select option&lt;/option&gt;
+                &lt;option value=&quot;&quot;&gt;Option 1&lt;/option&gt;
+                &lt;option value=&quot;&quot;&gt;Option 2&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/form&gt; 
                             </code>
                         </pre> 
 
@@ -235,7 +267,7 @@
                                         <div class="e-body-modal">
                                             <form method="POST">
                                                 <div class="form-label-text">Họ và tên*</div>
-                                                <input style="width: 504px" class="form-input" type="text" id="form-input-modal" name="form-input-modal" placeholder="Nhập họ và tên">
+                                                <input style="min-width: 300px" class="e-form-input" type="text" id="form-input-modal" name="form-input-modal" placeholder="Nhập họ và tên">
                                                 <div class="e-two-button">
                                                     <button class="e-btn btn-transparent">Bỏ qua</button>
                                                     <button class="e-btn">Xác nhận</button>
