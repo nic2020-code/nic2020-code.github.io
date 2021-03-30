@@ -435,7 +435,7 @@ body {
   margin: 0 32px;
 }
 
-.navbar-list-item.active a {
+.navbar-left ul li.active a {
   color: #091e42;
   font-weight: 500;
 }
@@ -479,7 +479,7 @@ body {
   width: 232px;
 }
 
-.e-side-menu {
+.e-side-menu ul {
   padding: 0;
   margin: 0;
 }
@@ -519,12 +519,12 @@ body {
   text-decoration: none;
 }
 
-.side-toggle-menu .list-item-wrapper.active {
+.e-side-menu .list-item-wrapper.active {
   background-color: #f8faff;
   border-radius: 2px;
 }
 
-.e-side-menu .side-list-item.active {
+.e-side-menu ul .side-list-item.active {
   background-color: #f8faff;
   border: 1px solid #b3d4ff;
   border-radius: 2px;
@@ -553,4 +553,32 @@ body {
 
 .side-toggle-menu a .list-item-icon {
   margin-right: 10px;
+}
+
+.e-side-menu .title-menu {
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 16px;
+  color: #253858;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.e-side-menu ul .list-setting-item {
+  list-style: none;
+  padding: 14px 16px;
+}
+
+.e-side-menu ul .list-setting-item.active {
+  background-color: #f8faff;
+  border: 1px solid #b3d4ff;
+  border-radius: 2px;
+  font-weight: 500;
+  color: #253858;
+}
+
+.e-side-menu ul .list-setting-item a {
+  text-decoration: none;
+  color: #253858;
+  font-family: "Helvetica neue", sans-serif;
+  font-size: 13px;
 }

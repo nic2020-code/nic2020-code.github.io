@@ -20,19 +20,36 @@ function rotateArrow() {
 
 function currentPage() {
 
-    var navContainer = document.querySelector(".navbar-list-menu");
-    var navItems = navContainer.querySelector(".navbar-list-item");
+    var url = window.location.href;
 
-    for (var i = 0; i < navItems.length; i++) {
-        navItems[i].addEventListener("click", function() {
-            var current = document.querySelector(".navbar-list-item.active");
-            current[0].className = current[0].className.replace("active", "");
-            this.className += "active";
-        });
-    }
+    $(".navbar-left a").forEach(function() {
+
+        if (url == (this.href)) {
+
+            $(this).closest(".navbar-list-item").addClass("active");
+            $(this).closest(".navbar-list-item").parent().parent().addClass("active");
+
+        }
+    });
     
 }
 
 function showToggleMenu() {
     $(".side-toggle-menu").toggle('500', "swing");
+}
+
+function currentPageMenu() {
+
+    var url = window.location.href;
+
+    $(".e-side-menu a").forEach(function() {
+
+        if (url == (this.href)) {
+
+            $(this).closest(".side-list-item").addClass("active");
+            $(this).closest(".side-list-item").parent().parent().addClass("active");
+
+        }
+    });
+    
 }
